@@ -1,8 +1,133 @@
-body {
-    padding: 0 25%;
-}
+
 
 header nav {
     background-color: black;
 }
 
+#Formu *{
+    margin-left: 3%;
+    min-width: 90%;
+    padding-top: 10px;
+   
+}
+footer {
+    background-color: #2E2E2E;
+}
+
+.page-footer a{
+color: white;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+      padding: 0 25%;
+    }
+}
+#but{
+    font-size: 18px;
+    min-width: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.low
+{
+    
+    font-size: 16px;
+}
+
+.card-img-top{
+
+    opacity: 0.20;
+
+}
+
+
+
+.card-group {
+    width: 100%;
+    justify-content: space-between;
+   
+}
+
+/* Gestion du hover*/
+.card-img-top:hover
+{
+opacity: 1;
+}
+
+.card-img-top:hover .basic .dead
+
+{
+opacity: initial;
+opacity: 0;
+}
+
+.bloc:hover .name
+{
+font-size: 2vw;
+margin-top: 27%;
+text-align: center;
+margin-left: 11%;
+}
+/* fin de gestion du hover*/
+
+
+
+
+
+
+.basic {
+    font-size: 30px;
+    margin-top: -25%;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .dead {
+    padding-top: 1%;
+    position: absolute;
+    margin-top: 50%;
+    margin-bottom: 80%;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    font-size: 3vw;
+    padding-left: 5px;
+    text-align: center;
+    word-wrap:break-word;
+    padding-bottom:1%;
+  }
+  .gold
+{
+  color: rgb(255, 100, 0);
+}
+.texte1
+{
+  padding-top: 1%;
+  position: absolute;
+  margin-top: 2%;
+  margin-bottom: 80%;
+  width: 100%;
+  height: auto;
+  overflow:hidden;
+  font-size: 2vw;
+  background-color: rgba(255, 255, 255, .5);
+  padding-left: 5px;
+  border: 0px  solid;
+  border-radius: 20px;
+  text-align: center;
+  word-wrap:break-word;
+  padding-bottom:1%;
+
+}
+/* Ajout CSS 27/02/19 23:52
+    - low pour rendre la partie du texte réduite et mettre en valeur la précédente
+    - création de l'id but pour les bouttons, changer leurs tailles, les aligners au milieu et un margin botton
+    - création de la classe texte1 pour l'affichage de la récompense et de "dead" en cas de mort peut surement être géré avec condition JS
+    - création classe gold pour affichage coloré du montant de la récompense
+    - création classe basic pour affichage du nom du PNJ
+    - mise en place du hover sur les images de pnj (liée à la balise basic+dead, en la faisant disparaitre)
+
+    /!\ QUESTIONS : -Pourquoi le space between ne fonctionne pas ?
+                    - pourquoi les selecteurs avancé ne bouge pas au hover (héritage ?)
