@@ -40,13 +40,19 @@ color: white;
 .card-img-top{
 
     opacity: 0.20;
+    justify-content: space-between;
+}
 
+.item3 {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 90%;
 }
 
 
-
 .card-group {
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
    
 }
@@ -57,13 +63,27 @@ color: white;
 opacity: 1;
 }
 
-.card-img-top:hover .basic .dead
-
+.card:hover > .basic
 {
+
 opacity: initial;
-opacity: 0;
+visibility:hidden ;
+}
+.card:hover > .texte1
+{
+
+opacity: initial;
+visibility:hidden ;
+}
+.card:hover > .dead
+{
+
+opacity: initial;
+visibility:hidden ;
 }
 
+
+/* A REVOIR
 .bloc:hover .name
 {
 font-size: 2vw;
@@ -71,16 +91,23 @@ margin-top: 27%;
 text-align: center;
 margin-left: 11%;
 }
+
+
+
 /* fin de gestion du hover*/
 
+.card-title{
+margin-top: -10%;
+font-size: 30px;
 
+}
 
 
 
 
 .basic {
     font-size: 30px;
-    margin-top: -25%;
+    margin-top: -50%;
     text-align: center;
     margin-left: 5%;
   }
@@ -121,6 +148,11 @@ margin-left: 11%;
   padding-bottom:1%;
 
 }
+
+.card {
+  padding: 0 5px;
+}
+
 /* Ajout CSS 27/02/19 23:52
     - low pour rendre la partie du texte réduite et mettre en valeur la précédente
     - création de l'id but pour les bouttons, changer leurs tailles, les aligners au milieu et un margin botton
@@ -128,6 +160,7 @@ margin-left: 11%;
     - création classe gold pour affichage coloré du montant de la récompense
     - création classe basic pour affichage du nom du PNJ
     - mise en place du hover sur les images de pnj (liée à la balise basic+dead, en la faisant disparaitre)
+    
 
     /!\ QUESTIONS : -Pourquoi le space between ne fonctionne pas ?
                     - pourquoi les selecteurs avancé ne bouge pas au hover (héritage ?)
