@@ -89,6 +89,12 @@ footer {
     color: white; 
   }
 
+  .container
+  {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
 
 /* A REVOIR
 .bloc:hover .name
@@ -103,12 +109,16 @@ margin-left: 11%;
 
 /* fin de gestion du hover*/
 
-.card-title{
+.card-title {
 margin-top: -10%;
 font-size: 30px;
 
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 
