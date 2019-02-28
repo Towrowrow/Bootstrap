@@ -81,6 +81,13 @@ visibility:hidden ;
 opacity: initial;
 visibility:hidden ;
 }
+footer {
+  background-color: #2E2E2E;
+  }
+  
+  .page-footer a{
+    color: white; 
+  }
 
 
 /* A REVOIR
